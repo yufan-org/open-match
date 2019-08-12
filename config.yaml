@@ -68,7 +68,8 @@ presubmits:
     spec:
       containers:
       - image: gcr.io/open-match-build/open-match-build
-        command: ["./test_config.sh"]
+        command: ["exec"]
+        args: ["./test_config.sh"]
   - name: test-presubmit
     decorate: true
     always_run: true
