@@ -1,0 +1,30 @@
+plugins:
+  # Enable the following for the open-match repo
+  yufan-org/open-match:
+  - size # Auto-label size of PR
+  - trigger # Allow people to configure CI jobs to /test
+  - approve # Allow OWNERS to /approve
+  - assign  # Allow /assign and /cc
+  - blunderbuss # Auto-assign people
+  - cat # /meow replies with cat pictures
+  - dog # /bark replies with dog pictures
+  - lgtm # Allow /lgtm
+  - hold # Support /hold to delay merge
+  - lifecycle # Allow /lifecycle stale
+  - yuks # Let prow tell a /joke
+  - verify-owners # Validates OWNERS file changes in PRs
+  - wip # Applies a label to PRs with wip in the title to block merge
+
+approve:
+- repos:
+  - yufan-org/open-match
+  require_self_approval: false
+  lgtm_acts_as_approve: true
+  implicit_self_approve: false
+
+config_updater:
+  maps:
+    config.yaml:
+      name: config
+    plugins.yaml:
+      name: plugins
