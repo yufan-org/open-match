@@ -6,6 +6,7 @@
 [![GitHub release](https://img.shields.io/github/release-pre/googleforgames/open-match.svg)](https://github.com/googleforgames/open-match/releases)
 [![Follow on Twitter](https://img.shields.io/twitter/follow/Open_Match.svg?style=social&logo=twitter)](https://twitter.com/intent/follow?screen_name=Open_Match)
 
+
 Open Match is an open source game matchmaking framework that simplifies building
 a scalable and extensible Matchmaker. It is designed to give the game developer
 full control over how to make matches while removing the burden of dealing with
